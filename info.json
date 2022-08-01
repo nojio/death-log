@@ -1,0 +1,12 @@
+{
+  "name": "death-log",
+  "version": "0.1.0",
+  "title": "Death Log",
+  "author": "nojio",
+  "description": "The number of deaths and their history are displayed on the InformaTron.",
+  "factorio_version": "1.1",
+  "dependencies": [
+    "base >= 1.1.0",
+    "informatron >= 0.2.2"
+  ]
+}

@@ -43,7 +43,7 @@ function Informatron.page_content(page_name, player_index, element)
         -- record
         for i = #global.death_history, 1, -1 do
         -- for i, _ in pairs(global.death_history) do
-            local history_tick_cell = history_table.add{type='label',caption={"death_log.history_tick_cell", format_tick_to_time(global.death_history[i].tick)}}
+            local history_tick_cell = history_table.add{type='label',caption={"death_log.history_tick_cell", Format_tick_to_time(global.death_history[i].tick)}}
             local history_text_cell = history_table.add{type='label',caption={"death_log.history_text_cell",
                 global.death_history[i].player_name,
                 global.death_history[i].cause,

@@ -1,8 +1,8 @@
-function make_gps_tag(position)
+function Make_gps_tag(position)
     return '[gps='..math.floor(position.x)..','..math.floor(position.y)..']'
 end
 
-function format_tick_to_time(tick)
+function Format_tick_to_time(tick)
     local seconds = math.floor(tick / 60)
     local days = math.floor(seconds/3600/24)
     local hours = math.floor(seconds/3600 - days*24)
@@ -12,5 +12,5 @@ function format_tick_to_time(tick)
     local s_mins = string.format("%02.f", mins);
     local s_secs = string.format("%02.f", secs);
 
-    return days..":"..s_hours..":"..s_hours..":"..s_mins..":"..s_secs
+    return days..":"..s_hours..":"..s_mins..":"..s_secs
 end

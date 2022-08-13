@@ -1,6 +1,6 @@
 {
   "name": "death-log",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "title": "Death Log",
   "author": "nojio",
   "description": "The number of deaths and their history are displayed on the InformaTron.",

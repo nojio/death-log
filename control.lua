@@ -68,7 +68,7 @@ script.on_event(defines.events.on_gui_click, function(event)
 
     for i, _ in pairs(global.death_history) do
       if element.name == "zoom_position_"..global.death_history[i].id or element.name == "hisotry_position_"..global.death_history[i].id then
-          player.print("zoom_position pressed")
+          if is_debug_mode then player.print("zoom_position pressed") end
           player.zoom_to_world(global.death_history[i].position, 0.5)
       end
     end
